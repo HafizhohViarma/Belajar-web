@@ -60,9 +60,101 @@ header h2 {
 }
 
 .banner img{
-	display:block;
+	display: block;
 	width: 100%;
 	height: 350px;
+}
+
+.menu-kiri{
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-tengah{
+	width: 530px;
+	float: left;
+	margin-right: 10px;
+	text-align: justify;
+}
+
+.menu-kanan{
+	width: 250px;
+	float: left;
+}
+
+.kotak{
+	border: 1px solid grey;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.kotak img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.kotak h3{
+	background-color: crimson;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 12px;
+	border-radius: 10px;
+}
+
+.posting {
+	color: grey;
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+
+.jadwal {
+	font-weight: bold;
+}
+
+
+.tombol {
+	text-decoration: none;
+	padding: 10px;
+	width: 120px;
+	color: white;
+	text-align: center;
+	display: block;
+	margin-top: 2px;
+	border-radius: 20px;
+}
+
+.tombol:hover{
+	background-color: black;
+	transition-duration: 1s;
+}
+
+.tombol-pesan{
+	background-color: darkorange;
+}
+
+.tombol-lengkap{
+	background-color: green;
+}
+
+.berita ul{
+	list-style-type: none;
+}
+
+.berita ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 12px;
+	color: black;
+	border-bottom: 1px solid grey;
+	margin-bottom: 10px;
+}
+
+.berita ul li a:hover{
+	color: crimson;
 }
 
 footer {
@@ -74,11 +166,36 @@ footer {
 	
 }
 
+/* Tampilan untuk layar monitor*/
 @media screen and (max-width:780px){
 	header h2, header p {
 		text-align: center;
 		}
+		
 		.navigasi li{
 			float: none;
 		}
+		
+		.menu-kiri, .menu-tengah, .menu-kanan{
+			float:none;
+			width: 100%;
+		}
+}
+
+@media screen and (max-width:1080px){
+	.div-utama{
+		width: 100%;
+	}
+	.menu-kiri{
+		width: 25%;
+	}
+	.menu-tengah{
+		width: 68%;
+		float: right;
+	}
+	.menu-kanan{
+		clear: both;
+		float: none;
+		width: 100%;
+	}
 }
